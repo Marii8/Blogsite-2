@@ -156,7 +156,6 @@ main {
 
 .project:hover {
     background-color: rgba(174, 141, 188, 1);
-
 }
 
 
@@ -170,14 +169,36 @@ main {
 article {
     grid-area: article;
     background-color: #ffb6c1;
-
 }
 
-article div img {
+.articles img {
     width: 300px;
-    height: 300px;
+    height:300px;
     object-fit: cover;
+    vertical-align: middle;
+
 }
+
+
+article div:nth-child(odd) img {
+    margin-right: 40px;
+}
+article div:nth-child(even) img {
+    margin-left: 40px;
+}
+
+.articles {
+    display: flex;
+    align-items: center;
+        /*画像と文字を横に並べるためflexしてalign-items:center; 画像と文字なので、画像の方にvertical-align:middle;を入れて中央に並べた*/
+    margin: 30px 40px;
+}
+
+article .articles:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
 
 
 
@@ -185,11 +206,13 @@ article div img {
 
 section {
     grid-area: section;
-    background-color: #d8bfd8
+    background: radial-gradient(#f8e469, rgba(166, 101, 141, 0.5));
 }
 
 footer {
     grid-area: footer;
-    background-color: #2f4f4f;
+    background: linear-gradient(rgba(219, 229, 133, 0.3), #6db5a9);
+    text-align: center;
+    color: #e5d57d;
 }
 
