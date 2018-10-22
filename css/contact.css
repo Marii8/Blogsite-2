@@ -10,12 +10,8 @@ body {
                         100vh
                         80px;
     grid-template-columns: 1fr;
-    background-image: url(../img/purple-grapes.jpg);
-    background-size: cover;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-position: 0 -150px;
 }
+
 /*BODY LAYOUT END*/
 
 /*HEADER         */
@@ -121,12 +117,43 @@ a:visited {
 /*CONTACT              */
 
 form {
+    background-image: url(../img/purple-grapes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -150px;
+    position: relative;
     grid-area: form;
-    background-color: rgba(69, 69, 69, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: -3;
+}
+
+.blur:before {
+    background: inherit;
+    content: "";
+    display: block;
+    filter: blur(5px);
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+form:after {
+    background-color: rgba(69, 69, 69, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
     z-index: -1;
 }
 
