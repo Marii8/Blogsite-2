@@ -131,20 +131,38 @@ form {
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.label {
+    display: inline-block;
+    width: 250px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.name,
+.email {
+    width: 250px;
+    padding: 5px 0;
+}
+
+.button {
+    text-align: center;
     
 }
 
 button {
     padding: 10px 40px;
     margin-top: 20px;
-    box-shadow: 
 }
 
 button:hover {
     cursor: pointer;
-
 }
 
 /*FOOTER*/
