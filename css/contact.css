@@ -126,7 +126,10 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: -1;
 }
+
 
 .contact-form {
     display: flex;
@@ -153,7 +156,6 @@ form {
 
 .button {
     text-align: center;
-    
 }
 
 button {
