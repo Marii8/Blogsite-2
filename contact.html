@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
     <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Amatic+SC:700|Anton|Bangers|Caveat|Cherry+Swash:700|Corben:700|Creepster|Economica:700|Homemade+Apple|IM+Fell+DW+Pica+SC|Kaushan+Script|Londrina+Shadow|Montserrat+Subrayada|Open+Sans|Oswald:700|Permanent+Marker|Quicksand|Roboto+Condensed:700|Teko|Vollkorn" rel="stylesheet">
+    <!-- レスポンシブ対応 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 
 
@@ -39,46 +42,49 @@
     </menu>
 
 <!-- CONTACT -->
+    <div class="bg blur"></div>
     <form action="" class=
-"blur">
+"">
         <div class="contact-form">
             <div class="form-group">
-                <span class="label">お名前</span>
-                <input type="text" placeholder="氏名" class="name">
+                <span class="label">名前</span>
+                <input type="text" placeholder="氏" class="name">
+                <input type="text" placeholder="名" class="name">
             </div>
             <div class="form-group">
-                <span class="label">Eメールアドレス</span>
-                <input type="text" placeholder="＊＊＊＊＠gamil.com" class="email">
+                <span class="label">メールアドレス</span>
+                <input type="text" placeholder="gmail.com@" class="email">
             </div>
             <span class="form-group">
                 <span class="label">性別</span>
                 <label for="male">
-                    <input type="radio" id="male" name="gender">男性
+                    <input type="radio" id="male" name="gender"> 男性
                 </label>
                 <label for="female">
-                    <input type="radio" id="female" name="gender">女性
+                    <input type="radio" id="female" name="gender"> 女性
                 </label>
             </span>
             <div class="form-group">
                 <span class="label">言語</span>
                 <span class="input-field">
                         <label for="english">
-                            <input type="checkbox" id="english" name="language">English
+                            <input type="checkbox" id="english" name="language"> English
                         </label>
                         <label for="japanese">
-                            <input type="checkbox" id="japanese" name="language">Japanese
+                            <input type="checkbox" id="japanese" name="language"> Japanese
                         </label>
                 </span>
             </div>
             <div class="form-group">
-                <span class="label">お問い合わせ内容</span>
-                <textarea name="textarea" id="" cols="100" rows="5"></textarea>
+                <textarea name="textarea" id="" cols="100" rows="5" placeholder="お問い合わせ内容"></textarea>
             </div>
-            <div class="button">
-                <button>SUMBIT</button>
-            </div>
+            <fieldset class="submit">
+                <button>SUBMIT</button>
+            </fieldset>
         </div>
     </form>
+
+<!--     背景とフォームを完全切り離し -->
 
 
 <!-- FOOTER -->
