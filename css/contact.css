@@ -1,0 +1,167 @@
+/*BODY LAYOUT       */
+body {
+    display: grid;
+    grid-template-areas: 'header'
+                         'menu'
+                         'form'
+                         'footer';
+    grid-template-rows: 80px
+                        80px
+                        100vh
+                        80px;
+    grid-template-columns: 1fr;
+    background-image: url(../img/purple-grapes.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: 0 -150px;
+}
+/*BODY LAYOUT END*/
+
+/*HEADER         */
+header {
+    grid-area: header;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left i {
+    vertical-align: middle;/*画像と文字を中央に整列させるときは画像の中心を指定する*/
+    margin-left: 30px;
+    margin-right: 5px;
+    color: #454552;
+}
+
+.header-left strong {
+    color: #F43E43;
+}
+
+.header-left:hover {
+    cursor: pointer;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: #454552;
+    font-size: 16px;
+}
+.header-left a:visited {
+    color: #454552;
+}
+
+
+.header-right {
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+.header-right a {
+    text-decoration: none;
+    display: block; /*padding部分もカーソルに反応するようにblock要素にする。*/
+    color: #454552;
+}
+
+
+.header-list li{
+    display: inline-block;
+    background-color: rgba(69, 69, 69, 0.3);
+    height: 80px; /*header-barを同じ高さに*/
+    line-height: 80px;/*テキストとheader-barを同じ高さにするとテキストが中央に寄る*/
+    padding: 0 10px;
+}
+
+.header-right li:hover {
+    background-color: rgba(200, 200, 200, 0.7);
+}
+.header-right a:hover {
+    color: #F43E43;
+}
+
+
+
+/*MENU                */
+menu {
+    grid-area: menu;
+    background-color: #454545;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-list li{
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 80px;
+    padding: 0 20px;
+    color: #EAEAEA;
+    font-size: 1.2em;
+}
+
+.menu-list li:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #EAEAEA;
+}
+
+
+/*CONTACT              */
+
+form {
+    grid-area: form;
+    background-color: rgba(69, 69, 69, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    box-shadow: 
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+/*FOOTER*/
+footer {
+    grid-area: footer;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i,
+footer span {
+    color: #EAEAEA;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
